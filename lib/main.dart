@@ -20,7 +20,7 @@ class MyGetxApp extends StatelessWidget {
       initialBinding: FirstScreenBinding(),
       debugShowCheckedModeBanner: false,
       translations: Translat(),
-      locale: const Locale('en'),
+      locale: const Locale('uk'),
     );
   }
 }

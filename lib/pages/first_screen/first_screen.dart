@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:usage_of_getx/pages/second_screen/second_screen.dart';
 
 import 'first_screen_controller.dart';
 
@@ -19,24 +20,28 @@ class FirstScreen extends GetView<FirstScreenController> {
           children: [
             InkWell(
               onTap: controller.changeColor,
-              child: Obx(()=>Container(
-                color: controller.isRed.value? controller.containerColor=Colors.red : controller.containerColor = Colors.blue,
-                height: 100,
-                width: 100,
-                child: Center(
-                    child: Text(
-                  'containerText'.tr,
-                  style: const TextStyle(
-                    fontSize: 20,
-                  ),
-                )),
-              ),),
+              child: Obx(
+                () => Container(
+                  color: controller.isRed.value
+                      ? Colors.red
+                      : Colors.blue,
+                  height: 100,
+                  width: 100,
+                  child: Center(
+                      child: Text(
+                    'containerText'.tr,
+                    style: const TextStyle(
+                      fontSize: 20,
+                    ),
+                  )),
+                ),
+              ),
             ),
             const SizedBox(
               height: 40,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: ()=> Get.to(()=>SecondScreen()),
               child: Text('buttonText'.tr),
             ),
           ],
