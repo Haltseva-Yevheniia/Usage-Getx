@@ -10,7 +10,7 @@ class FirstScreenController extends GetxController {
 
   void changeColor (){
     isRed.value = !isRed.value;
-    isRed.value? containerColor=Colors.red :containerColor = Colors.blue;
+    //isRed.value? containerColor=Colors.red :containerColor = Colors.blue;
 
   }
 
