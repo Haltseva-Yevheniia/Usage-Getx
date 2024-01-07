@@ -3,11 +3,11 @@ import 'package:get/get.dart';
 
 import 'second_screen_controller.dart';
 
-// GetView<SecondScreenController> error get.LazyPut
-class SecondScreen extends StatelessWidget {
-  SecondScreen({super.key});
 
-  SecondScreenController controller = SecondScreenController();
+class SecondScreen extends GetView<SecondScreenController>{
+  const SecondScreen({super.key});
+
+  //SecondScreenController controller = SecondScreenController();
 
   @override
   Widget build(BuildContext context) {

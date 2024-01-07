@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:usage_of_getx/pages/second_screen/second_screen.dart';
+import 'package:usage_of_getx/pages/second_screen/second_screen_binding.dart';
 
 import 'first_screen_controller.dart';
 
@@ -41,7 +42,7 @@ class FirstScreen extends GetView<FirstScreenController> {
               height: 40,
             ),
             ElevatedButton(
-              onPressed: ()=> Get.to(()=>SecondScreen()),
+              onPressed: ()=> Get.to(()=>const SecondScreen(), binding: SecondScreenBinding(), ),
               child: Text('buttonText'.tr),
             ),
           ],
